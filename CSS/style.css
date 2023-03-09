@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    padding: 0.7rem;
+    width: 10%;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    background: rgba(255, 31, 31, 0.6);
+}
+
+.active {
+    background: rgba(255, 31, 31, 0.8);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide .content {
+    width: 400px;
+    position: absolute;
+    bottom: 40px;
+    left: -450px;
+    opacity: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(450px);
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+.buttons #prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.buttons #next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    background-color: rgba(45, 240, 65, 0.4);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0 7px;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: #0f0;
+    border-color: #5eff5e;
+}
+
+.slide:nth-child(1) {
+    background: url(http://www.picsum.photos/id/47/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(2) {
+    background: url(http://www.picsum.photos/id/74/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(3) {
+    background: url(http://www.picsum.photos/id/294/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(4) {
+    background: url(http://www.picsum.photos/id/921/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(5) {
+    background: url(http://www.picsum.photos/id/654/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(6) {
+    background: url(http://www.picsum.photos/id/805/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(7) {
+    background: url(http://www.picsum.photos/id/167/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(8) {
+    background: url(http://www.picsum.photos/id/586/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(9) {
+    background: url(http://www.picsum.photos/id/492/1920/1260) no-repeat center center / cover;
+}
+
+.slide:nth-child(10) {
+    background: url(http://www.picsum.photos/id/845/1920/1260) no-repeat center center / cover;
+}
